@@ -20,7 +20,6 @@ NYC Weather Dataset: The dataset was gathered from the National Oceanic and Atmo
 
 ### Methods
 
-This project uses descriptive analysis and visualizations including trends over time. 
 
 **1)** VAR
 
