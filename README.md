@@ -75,12 +75,11 @@ For the future analysis, I would like to use the model to predict the 2011 and 2
 ### Repository Structure
 
 ```
-├── .ipynb_checkpoints
+├── Images
+├── .gitignore
 ├── 1. EDA.ipynb
 ├── 2. VAR.ipynb
-├── Images
 ├── README.md
-├── project.ipynb
 └── slides.pdf
 ```
 
