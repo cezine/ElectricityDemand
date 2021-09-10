@@ -25,7 +25,7 @@ NYC Electricity Consumption dataset contains 362,630 records. Each record repres
 
 Staten Island's average building electricity consumption appears much higher than the rest of New York City. As the dataset includes only 10 buildings in Staten Islands, this issue requires further investigation. The dataset also includes rather small number of buildings in Queens and the Bronx. Thus, I decided to focus on Manhattan as a sample for this project. 
 
-boxplot image
+![2](./Images/consumption.png)
 
 The graph above is showing a building’s electricity consumption in Manhattan on average. Except for 2010, which seems rather higher than the other years, and 2011 and 2018 with incomplete and missing data, the Median electricity usage in a year ranges from around 30,000 to 37,000 kilowatt-hours.
 
@@ -37,7 +37,7 @@ To match the location, I took Central Park’s weather data. I used different ty
 
 After merging the two datasets, I can see that weather as well as the electricity consumption have seasonality. The highest consumption is observed in the Summer. The next highest consumption is observed in the Winter. And this is the assumption I used for this project. 
 
-seasonality image
+![4](./Images/seasonality.png)
 
 Now, to predict the electricity consumption in any given month, I used models such as Vector Autocorrelation(VAR), Vector Autoregression Moving-Average with Exogenous Regressors(VARMAX) as well as Long Short Term Memory (LSTM) Neural Network. The basis behind this is that the electricity consumption a month ago can definitely affect this month’s consumption. In addition, the last month’s temperature can also influence this month’s electricity consumption. This means that you can predict the future consumption with past values of itself along with past values of temperature. 
 
