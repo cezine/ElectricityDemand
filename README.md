@@ -1,6 +1,8 @@
 # New York City Energy Demand
+
 ![0](./Images/solar.png)
 **Author**: Sejin Jang
+
 
 
 ## Overview 
