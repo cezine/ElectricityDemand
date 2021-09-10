@@ -69,14 +69,15 @@ In conclusion, the weather data is useful for predicting energy demand. seamless
 
 ### Next Steps
 
-For the future analysis, I would like to use the model to predict the 2011 and 2018 consumption which were missing in the dataset. I would also like to apply the model to predict consumption in different boroughs as well as different cities. 
+For the future analysis, I would like to use the model to predict the 2011 and 2018 consumption which were missing in the dataset. I would also like to apply the model to predict consumption in different boroughs and cities as well as in different scales such as a household level or a state or a country level. 
 
 
 ### Repository Structure
 
 ```
 ├── .ipynb_checkpoints
-├── Data
+├── 1. EDA.ipynb
+├── 2. VAR.ipynb
 ├── Images
 ├── README.md
 ├── project.ipynb
