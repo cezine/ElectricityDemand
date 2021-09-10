@@ -32,6 +32,7 @@ The graph above is showing a building’s electricity consumption in Manhattan o
 In order to obatin the missing data, I have reached out to New York City Housing Authority who provides the data. Until I hear from them, I have made 4 datasets: 2 versions of train set, 1 validation set and 1 test set. The first version of the train set is the seamless data from 2012 to 2017 (6 years). Within this seamless data, I used the first 5 years as the second version of the train set and the next 1 year as a validation set. I also kept data from 2019 as a test set. The reason I seperate the dataset in this way is to compare the results and see if seamlessness and more training data have any effect on model performance.
 
 ![3](./Images/split.png)
+
 To match the location, I took Central Park’s weather data. I used different types of temperature data. Extreme minimum and maximum temperatures represent the highest daily maximum temperature and the lowest daily minimum temperature for the month. Maximum and minimum temperatures represent average of daily maximum and minimum temperatures. Average temperature is the mean of the maximum and minimum temperatures. 
 
 After merging the two datasets, I can see that weather as well as the electricity consumption have seasonality. The highest consumption is observed in the Summer. The next highest consumption is observed in the Winter. And this is the assumption I used for this project. 
@@ -44,37 +45,23 @@ The key for VAR and VARMAX modeling is that you have to find the optimal order(l
 
 ![5](./Images/lag.png)
 
-After fitting the model with the optimal order, I get the equations for all time series variables. In this case, I only care about the consumption time series so I focus on the equation for the consumption as seen in the image below. The way I interpret this is that first, I observe what variable is most influetial in prediction by looking at the p-values. I consider those under 0.05 is the influential variables, so in this case, a, b, c are contributing in predicting consumption the most. My equation is made up of coefficients of all the time series. 
+After fitting the model with the optimal order, I get the equations for all time series variables. In this case, I only care about the consumption time series so I focus on the equation for the consumption as seen in the image below. The way I interpret this is that first, I observe what variable is most influetial in prediction by looking at the p-values. I consider those under 0.05 is the influential variables, so in this case, those in red boxes are contributing to consumption prediction the most. My equation is made up of coefficients of all the time series. 
 
 ![6](./Images/equation.png)
 
 
 ## Results
 
-
-**1)** 
-
-
-images
-
-**2)** 
+best model
 
 images
 
 
-**3)** 
-
-images
-
-
-**4)** 
-
-images
 
 
 ## Conclusions
 
-
+In conclusion, the weather data is useful for predicting energy demand. seamlessness, more training data...
 
 
 
@@ -82,17 +69,17 @@ images
 
 ### Next Steps
 
-
+For the future analysis, I would like to use the model to predict the 2011 and 2018 consumption which were missing in the dataset. I would also like to apply the model to predict consumption in different boroughs and cities as well as in different scales such as a household level or a state or a country level. 
 
 
 ### Repository Structure
 
 ```
-├── .ipynb_checkpoints
-├── Data
 ├── Images
+├── .gitignore
+├── 1. EDA.ipynb
+├── 2. VAR.ipynb
 ├── README.md
-├── project.ipynb
 └── slides.pdf
 ```
 
