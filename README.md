@@ -59,16 +59,18 @@ I have also attempted to use LSTM with various parameters. The key to LSTM model
 
 All the models will be evaluated with RMSE(Root Mean Squared Error), which will show how much kWh are off.
 
-best model
+My best model’s prediction is off by 4,809 kilowatt-hours, which indicates about 11% of forecasted data points are off on average. 
 
-images
+![7](./Images/result.png)
 
 
 
 
 ## Conclusions
 
-In conclusion, the weather data is useful for predicting energy demand. seamlessness, more training data...
+In conclusion, the weather data is useful for predicting energy demand. Also, more data will certainly improve model’ performance. 
+
+seamlessness, more training data...
 
 
 
