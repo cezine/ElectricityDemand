@@ -76,7 +76,8 @@ In conclusion, the weather data is useful for predicting energy demand. seamless
 
 ### Next Steps
 
-For the future analysis, I would like to continue exploring LSTM modeling and tuning as it has a potential to improve prediction. I would also like to use the model to predict the 2011 and 2018 consumption which were missing in the dataset. I hope to apply the model to predict consumption in different boroughs and cities as well as in different scales such as a household level or a state or a country level. 
+For the future analysis, I would like to continue improving the model using LSTM. I would also like to predict consumption in different boroughs and cities as well as in different scales such as a household level or a state or a country level. I hope that this project inspires more researchers to try to estimate the future energy demand using weather data and help decision makers to better prepare for it while adopting more clean and renewable energy.
+
 
 
 ### Repository Structure
