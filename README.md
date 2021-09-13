@@ -83,9 +83,9 @@ For the future analysis, I would like to continue exploring LSTM modeling and tu
 
 ```
 ├── Images
-├── .gitignore
 ├── 1. EDA.ipynb
 ├── 2. VAR.ipynb
+├── 3. LSTM.ipynb
 ├── README.md
 └── slides.pdf
 ```
