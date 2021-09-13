@@ -10,7 +10,7 @@
 
 According to the UN climate report this year, some of the global warming effects are now irreversible. The effects of this are detrimental, as the sea levels continue to rise, due to the melting of ice in the arctic, areas located below the sea level are at high risk. Furthermore, as the temperature increases, this also results in extreme weather events such as hurricanes, wildfires, and drought. To mitigate global warming, some have already resorted to using clean and renewable energy sources. This can be seen as more communities are trying to replace their traditional energy sources that rely on fossil fuels, with clean energy such as solar and wind. Hence, it is crucial to estimate the future energy demand so that a more clear and realistic goal can be set for the communities.
 
-In this project, I will build a predictive model that estimates the future electricity consumption in New York City based on its weather data. Energy usage is correlated with the temperatures. People are more likely to use more air conditioning in hot weather and more heaters during cold periods. The project aims to help decision makers from all sectors understand the magnitude of the global warming effect and to aid in better preparation as we attempt to meet the future energy demand while adopting more clean and renewable energy.
+In this project, I will build a predictive model that estimates the future electricity consumption in New York City with its weather data. Energy usage is correlated with the temperatures. People are more likely to use more air conditioning in hot weather and more heaters during cold periods. The project aims to help decision makers from all sectors understand the magnitude of the global warming effect and to aid in better preparation as we attempt to meet the future energy demand while adopting more clean and renewable energy.
 
 
 ## Data
@@ -38,22 +38,26 @@ In order to obatin the missing data, I have reached out to New York City Housing
 
 To match the location, I took Central Park’s weather data. I used different types of temperature data. Extreme minimum and maximum temperatures represent the highest daily maximum temperature and the lowest daily minimum temperature for the month. Maximum and minimum temperatures represent average of daily maximum and minimum temperatures. Average temperature is the mean of the maximum and minimum temperatures. 
 
-After merging the two datasets, I can see that weather as well as the electricity consumption have seasonality. The highest consumption is observed in the Summer. The next highest consumption is observed in the Winter. And this is the assumption I used for this project. 
+After merging the two datasets, I can see that weather as well as the electricity consumption have seasonality. The highest consumption is observed in the Summer. The next highest consumption is observed in the Winter. And this is the assumption I use for this project. 
 
 ![4](./Images/seasonality.png)
 
-Now, to predict the electricity consumption in any given month, I used models such as Vector Autocorrelation(VAR), Vector Autoregression Moving-Average with Exogenous Regressors(VARMAX) as well as Long Short Term Memory (LSTM) Neural Network. The basis behind this is that the electricity consumption a month ago can definitely affect this month’s consumption. In addition, the last month’s temperature can also influence this month’s electricity consumption. This means that you can predict the future consumption with past values of itself along with past values of temperature. 
+Now, to predict the electricity consumption in any given month, I used models such as Vector Autocorrelation (VAR), Vector Autoregression Moving-Average with Exogenous Regressors (VARMAX) as well as Long Short Term Memory (LSTM) Neural Network. The basis behind these models is that this month's electricity consumption is affected not only by the last month's a consumption but also by the last month's temperature. This means that you can predict the future electricity consumption with past values of itself along with past values of temperature. 
 
-The key for VAR and VARMAX modeling is that you have to find the optimal order(lag) value. To find this, you can use an attribute like ".select_order()".
+The key for VAR and VARMAX modeling is that you have to find the optimal order (lag) value. To find this, you can use an attribute like ".select_order()".
 
 ![5](./Images/lag.png)
 
-After fitting the model with the optimal order, I get the equations for all time series variables. In this case, I only care about the consumption time series so I focus on the equation for the consumption as seen in the image below. The way I interpret this is that first, I observe what variable is most influetial in prediction by looking at the p-values. I consider those under 0.05 is the influential variables, so in this case, those in red boxes are contributing to consumption prediction the most. My equation is made up of coefficients of all the time series. 
+After fitting the model with the optimal order, I get the equations for all time series variables. In this case, I only care about the consumption time series so I focus on the equation for the consumption as seen in the image below. The way I interpret this is that first, I observe what variable is most influetial in prediction by looking at the p-values. I consider those under 0.05 is the influential variables, so in this case, those in red boxes are contributing to the consumption prediction the most. My equation is made up of coefficients of all the time series. 
 
 ![6](./Images/equation.png)
 
+I have also attempted to use LSTM with various parameters. The key to LSTM modeling is that you have to scale the data before fitting. 
+
 
 ## Results
+
+All the models will be evaluated with RMSE(Root Mean Squared Error), which will show how much kWh are off.
 
 best model
 
@@ -72,7 +76,7 @@ In conclusion, the weather data is useful for predicting energy demand. seamless
 
 ### Next Steps
 
-For the future analysis, I would like to use the model to predict the 2011 and 2018 consumption which were missing in the dataset. I would also like to apply the model to predict consumption in different boroughs and cities as well as in different scales such as a household level or a state or a country level. 
+For the future analysis, I would like to continue exploring LSTM modeling and tuning as it has so much potiential in improving prediction. I would also like to use the model to predict the 2011 and 2018 consumption which were missing in the dataset. I hope to apply the model to predict consumption in different boroughs and cities as well as in different scales such as a household level or a state or a country level. 
 
 
 ### Repository Structure
