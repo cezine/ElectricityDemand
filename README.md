@@ -71,11 +71,6 @@ My best model’s prediction is off by 4,809 kilowatt-hours, which indicates abo
 
 In conclusion, the weather data is useful for predicting energy demand. Also, more data will certainly improve model’ performance. 
 
-seamlessness, more training data...
-
-
-
-
 
 ### Next Steps
 
