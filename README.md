@@ -49,7 +49,7 @@ The key for VAR and VARMAX modeling is that you have to find the optimal order (
 
 ![5](./Images/lag.png)
 
-After fitting the model with the optimal order, I get the equations for all time series variables. In this case, I only care about the consumption time series so I focus on the equation for the consumption as seen in the image below. The way I interpret this is that first, I observe what variable is most influetial in prediction by looking at the p-values. I consider those under 0.05 is the influential variables, so in this case, those in red boxes are contributing to the consumption prediction the most. My equation is made up of coefficients of all the time series. 
+After fitting the model with the optimal order, I get the equations for all time series variables. In this case, I only care about the consumption time series so I focus on the equation for the consumption as seen in the image below. The way I interpret this is that first, I observe what variable is most influential in prediction by looking at the p-values. I consider those under 0.05 is the influential variables, so in this case, those in red boxes are contributing to the consumption prediction the most. My equation is made up of coefficients of all the time series. 
 
 ![6](./Images/equation.png)
 
