@@ -89,7 +89,7 @@ For the future analysis, I would like to continue improving the model using LSTM
 ├── Images
 ├── 1. EDA.ipynb
 ├── 2. VAR.ipynb
-├── 3. LSTM.ipynb├── README.md
+├── 3. LSTM.ipynb
 ├── EnergyDemand.pdf
 └── README.md
 ```
