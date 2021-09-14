@@ -1,6 +1,7 @@
 # New York City Energy Demand
 
 ![0](./Images/solar.jpg)
+Photo courtesy of Mark Lennihan/AP
 
 **Author**: Sejin Jang
 
