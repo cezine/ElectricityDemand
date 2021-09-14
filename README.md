@@ -3,7 +3,7 @@
 ![0](./Images/solar.jpg)
 Photo courtesy of Mark Lennihan/AP
 
-**Author: Sejin Jang **
+**Author: Sejin Jang**
 
 
 
