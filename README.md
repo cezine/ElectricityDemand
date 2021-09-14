@@ -91,6 +91,6 @@ For the future analysis, I would like to continue improving the model using LSTM
 ├── 2. VAR.ipynb
 ├── 3. LSTM.ipynb
 ├── README.md
-└── slides.pdf
+└── EnergyDemand.pdf
 ```
 
