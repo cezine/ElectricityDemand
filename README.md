@@ -61,8 +61,11 @@ I have also attempted to use LSTM with various parameters. The key to LSTM model
 All the models are evaluated with RMSE(Root Mean Squared Error), which will show how much kWh are off.
 
 VAR (train1)    : RMSE 8,934. MAPE 22%
+
 VAR (train2)    : RMSE 4,809. MAPE 11%
+
 VARMAX (train1) : RMSE 6,227. MAPE 16%
+
 VARMAX (train2) : RMSE 5,639. MAPE 14%
 
 
