@@ -60,28 +60,14 @@ I have also attempted to use LSTM with various parameters. The key to LSTM model
 
 All the models are evaluated with RMSE(Root Mean Squared Error), which will show how much kWh are off.
 
-VAR (train1)    : RMSE 8,934. MAPE 22%
-
-VAR (train2)    : RMSE 4,809. MAPE 11%
-
-VARMAX (train1) : RMSE 6,227. MAPE 16%
-
-VARMAX (train2) : RMSE 5,639. MAPE 14%
-
-
-The best result is observed with using the second version of train set and the VAR model that includes up to 5 lags for each time series variable. This model's prediction is off by 4,809 kWh, which indicates that about 11% of forecasted data points are off on average. It looks like both the seamlessnes and the size of training dataset affect the model performance.
+The best result is observed when using the second version of train set and the VAR model that includes up to 5 lags for each time series variable. This model's prediction is off by 4,809 kWh, which indicates that about 11% of forecasted data points are off on average. Moreover, it looks like both the seamlessnes and the size of training dataset affected the model performance. 
 
 ![7](./Images/result.png)
-
-
 
 
 ## Conclusions
 
 In conclusion, the weather data is useful for predicting energy demand. Also, more data will certainly improve the model’ performance. 
-
-
-### Next Steps
 
 For the future analysis, I would like to continue improving the model using LSTM. I would also like to predict consumption in different boroughs and cities as well as in different scales such as a household level or a state or a country level. I hope that this project inspires more researchers to try to estimate the future energy demand using weather data and help decision makers to better prepare for it while adopting more clean and renewable energy.
 
