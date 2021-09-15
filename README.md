@@ -69,7 +69,9 @@ The best result is observed when using the second version of train set and the V
 
 In conclusion, the weather data is useful for predicting energy demand. Also, more data will certainly improve the model performance. 
 
-For the future analysis, I would like to continue improving the model using LSTM. I would also like to predict consumption in different boroughs and cities as well as in different scales such as a household level or a state or a country level. I hope that this project inspires more researchers to try to estimate the future energy demand using weather data and help decision makers to better prepare for it while adopting more clean and renewable energy.
+For the future analysis, I would like to continue improving the model using LSTM. I would also like to predict consumption in different boroughs and cities as well as in different scales such as a household level or a state or a country level. It would be interesting to see how adding other time series such as population as well as GDP would affect the prediction. 
+
+I hope that this project inspires more researchers to try to estimate the future energy demand using weather data and help decision makers to better prepare for it while adopting more clean and renewable energy.
 
 
 
