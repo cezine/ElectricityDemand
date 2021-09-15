@@ -78,7 +78,7 @@ The best result is observed with using the second version of train set and the V
 
 ## Conclusions
 
-In conclusion, the weather data is useful for predicting energy demand. Also, more data will certainly improve model’ performance. 
+In conclusion, the weather data is useful for predicting energy demand. Also, more data will certainly improve the model’ performance. 
 
 
 ### Next Steps
