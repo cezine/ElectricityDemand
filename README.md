@@ -69,7 +69,7 @@ VARMAX (train1) : RMSE 6,227. MAPE 16%
 VARMAX (train2) : RMSE 5,639. MAPE 14%
 
 
-The best result is observed with using the second version of train set and the VAR model. This model's prediction is off by 4,809 kWh, which indicates that about 11% of forecasted data points are off on average. It looks like both the seamlessnes and the size of training dataset affect the model performance.
+The best result is observed with using the second version of train set and the VAR model that includes up to 5 lags for each time series variable. This model's prediction is off by 4,809 kWh, which indicates that about 11% of forecasted data points are off on average. It looks like both the seamlessnes and the size of training dataset affect the model performance.
 
 ![7](./Images/result.png)
 
