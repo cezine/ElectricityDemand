@@ -60,7 +60,13 @@ I have also attempted to use LSTM with various parameters. The key to LSTM model
 
 All the models are evaluated with RMSE(Root Mean Squared Error), which will show how much kWh are off.
 
-My best model’s prediction is off by 4,809 kWh, which indicates about 11% of forecasted data points are off on average. 
+VAR (train1)    : RMSE 8,934. MAPE 22%
+VAR (train2)    : RMSE 4,809. MAPE 11%
+VARMAX (train1) : RMSE 6,227. MAPE 16%
+VARMAX (train2) : RMSE 5,639. MAPE 14%
+
+
+The best result is observed with using the second version of train set and the VAR model. This model's prediction is off by 4,809 kWh, which indicates that about 11% of forecasted data points are off on average. It looks like both the seamlessnes and the size of training dataset affect the model performance.
 
 ![7](./Images/result.png)
 
