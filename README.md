@@ -31,7 +31,7 @@ Staten Island's average building electricity consumption appears much higher tha
 
 ![2](./Images/consumption.png)
 
-The graph above is showing a building’s electricity consumption in Manhattan on average. Except for 2010, which seems rather higher than the other years, and 2011 and 2018 with incomplete and missing data, the Median electricity usage in a year ranges from around 30,000 to 37,000 kilowatt-hours.
+The graph above is showing a building’s electricity consumption in Manhattan on average. Except for 2010, which seems rather higher than the other years, and 2011 and 2018 with incomplete and missing data, the Median electricity usage in a year ranges from around 30,000 to 37,000 kWh.
 
 In order to obtain the missing data, I have reached out to New York City Housing Authority who provides the data. Until I hear from them, I have made 4 datasets: 2 versions of train set, 1 validation set and 1 test set. The first version of the train set is the seamless data from 2012 to 2017 (6 years). Within this seamless data, I used the first 5 years as the second version of the train set and the next 1 year as a validation set. I also kept data from 2019 as a test set. The reason I seperate the dataset in this way is to compare the results and see if seamlessness and more training data have any effect on model performance.
 
@@ -49,7 +49,7 @@ The key for VAR and VARMAX modeling is that you have to find the optimal order (
 
 ![5](./Images/lag.png)
 
-After fitting the model with the optimal order, I get the equations for all time series variables. In this case, I only care about the consumption time series so I focus on the equation for the consumption as seen in the image below. The way I interpret this is that first, I observe what variable is most influential in prediction by looking at the p-values. I consider those under 0.05 is the influential variables, so in this case, those in red boxes are contributing to the consumption prediction the most. My equation is made up of coefficients of all the time series. 
+After fitting the model with the optimal order, 5 in this case, I get the equations for all time series variables. Here, I only care about the consumption time series so I focus on the equation for the consumption as seen in the image below. The way I interpret this is that first, I observe what variable is most influential in prediction by looking at the p-values. I consider those under 0.05 is the influential variables, so in this case, those in red boxes are contributing to the consumption prediction the most. My equation is made up of coefficients of all the time series. 
 
 ![6](./Images/equation.png)
 
@@ -58,9 +58,9 @@ I have also attempted to use LSTM with various parameters. The key to LSTM model
 
 ## Results
 
-All the models will be evaluated with RMSE(Root Mean Squared Error), which will show how much kWh are off.
+All the models are evaluated with RMSE(Root Mean Squared Error), which will show how much kWh are off.
 
-My best model’s prediction is off by 4,809 kilowatt-hours, which indicates about 11% of forecasted data points are off on average. 
+My best model’s prediction is off by 4,809 kWh, which indicates about 11% of forecasted data points are off on average. 
 
 ![7](./Images/result.png)
 
