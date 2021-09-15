@@ -43,7 +43,7 @@ After merging the two datasets, I can see that weather as well as the electricit
 
 ![4](./Images/seasonality.png)
 
-Now, to predict the electricity consumption in any given month, I used models such as Vector Autocorrelation (VAR), Vector Autoregression Moving-Average with Exogenous Regressors (VARMAX) as well as Long Short Term Memory (LSTM) Neural Network. The basis behind these models is that this month's electricity consumption can be affected not only by the last month's a consumption but also by the last month's temperature. This means that you can predict the future electricity consumption with past values of itself along with past values of temperature. 
+Now, to predict the electricity consumption in any given month, I used models such as Vector AutoRegression (VAR), Vector Autoregression Moving-Average with Exogenous Regressors (VARMAX) as well as Long Short Term Memory (LSTM) Neural Network. The basis behind these models is that this month's electricity consumption can be affected not only by the last month's a consumption but also by the last month's temperature. This means that you can predict the future electricity consumption with past values of itself along with past values of temperature. 
 
 The key for VAR and VARMAX modeling is that you have to find the optimal order (lag) value. To find this, you can use an attribute like ".select_order()".
 
